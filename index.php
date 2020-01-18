@@ -21,11 +21,16 @@ echo $root;
 //$usuario = new Usuario();
 //$usuario->login('leonardo','1234567');
 
-$aluno = new Usuario("aluno","senhanova");
-$aluno->loadById(1);
-//$aluno->insert();
-$aluno->update("aluno","senhanova23");
 
+//INSERT + IPDATE
+//$aluno = new Usuario("aluno","senhanova");
+//$aluno->loadById(1);
+//$aluno->insert();
+//$aluno->update("aluno","senhanova23");
+
+$aluno = new Usuario();
+$aluno->loadById(3);
+$aluno->delete();
 echo $aluno;
 
 
