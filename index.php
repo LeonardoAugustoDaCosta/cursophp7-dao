@@ -18,13 +18,15 @@ echo $root;
 //$lista = Usuario::search('da');
 
 //CARREGA REGISTRO COM LOGIN E SENHA
-$usuario = new Usuario();
-$usuario->login('leonardo','1234567');
+//$usuario = new Usuario();
+//$usuario->login('leonardo','1234567');
 
+$aluno = new Usuario("aluno","senhanova");
+$aluno->loadById(1);
+//$aluno->insert();
+$aluno->update("aluno","senhanova23");
 
-
-
-echo $usuario;
+echo $aluno;
 
 
 ?>
